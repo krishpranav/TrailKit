@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct TrailKitApp: App {
@@ -13,5 +14,6 @@ struct TrailKitApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Hike.self)
     }
 }
