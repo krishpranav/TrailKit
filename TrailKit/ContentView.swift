@@ -19,6 +19,7 @@ struct ContentView: View {
         TabView(selection: $selectedTab) {
             Tab("Hikes", systemImage: "figure.hiking",
                 value: AppTab.hikes) {
+                HikeListView()
             }
 
             Tab("Charts", systemImage: "chart.xyaxis.line",

@@ -10,7 +10,7 @@ import Charts
 import SwiftData
 
 struct HikeChartsView: View {
-    @Query(sort: \.date) var hikes: [Hike]
+    @Query(sort: \Hike.date) var hikes: [Hike]
 
     var body: some View {
         NavigationStack {
@@ -29,7 +29,7 @@ struct HikeChartsView: View {
                         }
                         .chartXScale(domain: 0...20)
                         .chartYScale(domain: 0...400)
-                        .chartTitle("Altitude over Distance")
+
                         .frame(height: 200)
                     }
 
