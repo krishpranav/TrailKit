@@ -39,8 +39,11 @@ struct HikeChartsView: View {
                                 x: .value("Date", hike.date, unit: .day),
                                 y: .value("km", hike.distanceKm)
                             )
+//                            .foregroundStyle(
+//                                hike.isCompleted ? .green.gradient : .red.gradient
+//                            )
                             .foregroundStyle(
-                                hike.isCompleted ? .green.gradient : .orange.gradient
+                                hike.isCompleted ? .green : .red
                             )
                             .cornerRadius(4)
                         }

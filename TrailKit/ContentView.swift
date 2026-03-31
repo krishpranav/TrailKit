@@ -28,12 +28,16 @@ struct ContentView: View {
 
             Tab("Explore", systemImage: "safari",
                 value: AppTab.hikes) {
+                ExploreWebView()
             }
 
             Tab("Settings", systemImage: "gearshape",
                 value: AppTab.hikes) {
             }
         }
+
+        .tabViewStyle(.sidebarAdaptable)
+        .environment(store)
     }
 }
 
