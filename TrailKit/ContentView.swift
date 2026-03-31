@@ -24,6 +24,7 @@ struct ContentView: View {
 
             Tab("Charts", systemImage: "chart.xyaxis.line",
                 value: AppTab.hikes) {
+                HikeChartsView()
             }
 
             Tab("Explore", systemImage: "safari",
